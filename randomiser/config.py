@@ -2,4 +2,4 @@ import os
 
 
 class Config(object):
-    pass
+    SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/randomiser'
