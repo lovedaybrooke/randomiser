@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/static/stylesheets/main.css" />
+        <link type="text/css" rel="stylesheet" href="/static/stylesheets/unsemantic-grid-responsive.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+        </style>
+    </head>
+    <body>
+            {% for word in word_list %}
+            <div class="grid-25 mobile-grid-100">
+                <div class="flashcard">
+                    <div class="card-contents">
+                        <p class="word">{{ word.english }}</p>
+                        <p class="extra-info">{{ word.part_of_speech }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </body>
+</html>
